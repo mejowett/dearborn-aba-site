@@ -6,6 +6,7 @@ import { Carousel } from "react-responsive-carousel";
 class Home extends Component {
   render() {
     return (
+      <div className="container">  
       <Carousel>
         <div>
           <img className="d-block w-100" src="/images/family.jpg" />
@@ -20,6 +21,7 @@ class Home extends Component {
           <p className="legend">Tincidunt lobortis feugiat vivamus at augue eget arcu. Tempor commodo ullamcorper a lacus vestibulum sed.</p>
         </div>
       </Carousel>
+      </div>
     );
   }
 }

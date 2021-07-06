@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Contact from "./ContactComponent";
 import Header from "./HeaderComponent";
+import Footer from "./FooterComponent";
 import Home from "./HomeComponent";
 import Services from "./ServicesComponent";
-import Footer from "./FooterComponent";
+import Contact from "./ContactComponent";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { SERVICE } from '../shared/service';
 import { TEAM } from '../shared/team';
@@ -17,18 +17,28 @@ class Main extends Component {
       };
       
   }
+
   render() {
+
+      const HomePage = () => {
+          return (
+              <Home />
+          );
+      };
+    
+
       return (
           <div>
               <Header/> 
               <Switch>
-                    <Route path='/home' component={Home} />
-                    <Route exact path='/services' component={Services} />
-                    <Route exact path='/contactus' component={Contact} />
+                    <Route path='/home' component={HomePage} />   
+                    <Route exact path='/services'  />
+                    <Redirect to='/home' />
               </Switch>
+              <Footer />
           </div>
       );
-  }
+    }
 }
   
 
