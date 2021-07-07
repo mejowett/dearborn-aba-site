@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "./HeaderComponent";
+import CallToAction from "./CallToActionComponent";
 import Footer from "./FooterComponent";
 import Home from "./HomeComponent";
 import Services from "./ServicesComponent";
@@ -35,6 +36,7 @@ class Main extends Component {
                     <Route exact path='/services'  />
                     <Redirect to='/home' />
               </Switch>
+              <CallToAction />
               <Footer />
           </div>
       );

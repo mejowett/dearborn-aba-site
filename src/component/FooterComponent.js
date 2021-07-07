@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Footer(props) {
     return (
 
-        <section class="colored-section" id="title">
+        <section  id="title">
         <footer className="site-footer">
             <div className="container">
                 <div className="row">             

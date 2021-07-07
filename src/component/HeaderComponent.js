@@ -30,8 +30,7 @@ class Header extends Component {
       <React.Fragment>
         <section class="colored-section" id="title">
           <div class="container-fluid">
-          <Navbar dark
-           sticky="top" expand="md">
+          <Navbar dark expand="md">
             <NavbarBrand className="mr-auto" href="/"></NavbarBrand>
             <div className="container">
               <NavbarToggler onClick={this.toggleNav} />
