@@ -1,4 +1,12 @@
 import React, { Component } from "react";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  Button,
+  Label,
+  Col,
+  Row,
+} from "reactstrap";
 import ReactDOM from "react-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
@@ -6,21 +14,56 @@ import { Carousel } from "react-responsive-carousel";
 class Home extends Component {
   render() {
     return (
-      <div className="container">  
-      <Carousel>
-        <div>
-          <img className="d-block w-100" src="/images/family.jpg" />
-          <p className="legend">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div className="container">
+        <Carousel>
+          <div>
+            <img className="d-block w-100" src="/images/family.jpg" />
+            <p className="legend">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div>
+            <img className="d-block w-100" src="/images/mask-women.jpg" />
+            <p className="legend">
+              Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt
+              tortor aliquam.
+            </p>
+          </div>
+          <div>
+            <img className="d-block w-100" src="/images/boys.jpg" />
+            <p className="legend">
+              Tincidunt lobortis feugiat vivamus at augue eget arcu. Tempor
+              commodo ullamcorper a lacus vestibulum sed.
+            </p>
+          </div>
+        </Carousel>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="feature-box col-lg-4">
+              <a href="services.html">
+                <i className="icon fa fa-address-book fa-4x"></i>
+              </a>
+              <h3 className="feature-title">Top Professionals</h3>
+              <p>We employee more BCBA's.</p>
+            </div>
+
+            <div className="feature-box col-lg-4">
+              <a href="services.html">
+              <i className="fas fa-smile fa-4x"></i>
+              </a>
+              <h3 className="feature-title">Respected Clients</h3>
+              <p>We embrace and celebate our clients unique personalities.</p>
+            </div>
+
+            <div className="feature-box col-lg-4">
+              <a href="services.html"><i className="icon fa fa-chart-bar fa-4x"></i>
+              </a>
+              <h3 className="feature-title">Data Driven.</h3>
+              <p>We target the behaviors that will improve lives.</p>
+            </div>
+          </div>
         </div>
-        <div>
-          <img className="d-block w-100" src="/images/mask-women.jpg" />
-          <p className="legend">Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam.</p>
-        </div>
-        <div>
-          <img className="d-block w-100" src="/images/boys.jpg" />
-          <p className="legend">Tincidunt lobortis feugiat vivamus at augue eget arcu. Tempor commodo ullamcorper a lacus vestibulum sed.</p>
-        </div>
-      </Carousel>
       </div>
     );
   }
