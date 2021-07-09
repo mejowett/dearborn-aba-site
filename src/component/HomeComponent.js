@@ -38,27 +38,44 @@ class Home extends Component {
             </p>
           </div>
         </Carousel>
+
         <div className="container-fluid">
           <div className="row">
             <div className="feature-box col-lg-4">
-              <a href="services.html">
-                <i className="icon fa fa-address-book fa-4x"></i>
-              </a>
+              
+            <img
+                src="/images/experts.png"
+                height="100"
+                width="150"
+                alt="data"
+              />
+            
               <h3 className="feature-title">Top Professionals</h3>
               <p>We employee more BCBA's.</p>
             </div>
 
             <div className="feature-box col-lg-4">
-              <a href="services.html">
-              <i className="fas fa-smile fa-4x"></i>
-              </a>
+             
+            <img
+                src="/images/high-five.png"
+                height="100"
+                width="150"
+                alt="data"
+              />
+            
+              
               <h3 className="feature-title">Respected Clients</h3>
               <p>We embrace and celebate our clients unique personalities.</p>
             </div>
 
             <div className="feature-box col-lg-4">
-              <a href="services.html"><i className="icon fa fa-chart-bar fa-4x"></i>
-              </a>
+            <img
+                src="/images/data.png"
+                height="100"
+                width="150"
+                alt="data"
+              />
+             
               <h3 className="feature-title">Data Driven.</h3>
               <p>We target the behaviors that will improve lives.</p>
             </div>
