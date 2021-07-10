@@ -1,20 +1,19 @@
 import React, { Component } from "react";
 import Header from "./HeaderComponent";
+import Home from "./HomeComponent";
+import Contact from "./ContactComponent";
+import Services from "./ServicesComponent";
 import CallToAction from "./CallToActionComponent";
 import Footer from "./FooterComponent";
-import Home from "./HomeComponent";
-import Services from "./ServicesComponent";
-import Contact from "./ContactComponent";
+
 import { Switch, Route, Redirect } from "react-router-dom";
-import { SERVICE } from '../shared/service';
-import { TEAM } from '../shared/team';
+
 
 class Main extends Component {
   constructor(props) {
       super(props);
       this.state = {
-          service: SERVICE,
-          team: TEAM
+         
       };
       
   }
@@ -32,8 +31,9 @@ class Main extends Component {
           <div>
               <Header/> 
               <Switch>
-                    <Route path='/home' component={HomePage} />   
-                    <Route exact path='/services'  />
+                    <Route path='/home' component={HomePage} />
+                    <Route path='/services' component={Services} />
+                    <Route path='/contactus' component={Contact} />    
                     <Redirect to='/home' />
               </Switch>
               <CallToAction />

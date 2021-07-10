@@ -1,13 +1,4 @@
 import React, { Component } from "react";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  Button,
-  Label,
-  Col,
-  Row,
-} from "reactstrap";
-import ReactDOM from "react-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
@@ -15,7 +6,7 @@ class Home extends Component {
   render() {
     return (
       <div className="container">
-        <Carousel>
+        <Carousel autoPlay interval="5000" transitionTime="5000" showThumbs={false}>
           <div>
             <img className="d-block w-100" src="/images/family.jpg" />
             <p className="legend">

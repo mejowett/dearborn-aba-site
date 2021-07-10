@@ -9823,6 +9823,11 @@ react-refresh@^0.8.3:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
+react-responsive-accordion@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-responsive-accordion/-/react-responsive-accordion-1.0.0.tgz#e2c39ee13e18daa40d9d78486beccd27f4988cba"
+  integrity sha1-4sOe4T4Y2qQNnXhIa+zNJ/SYjLo=
+
 react-responsive-carousel@^3.2.18:
   version "3.2.18"
   resolved "https://registry.yarnpkg.com/react-responsive-carousel/-/react-responsive-carousel-3.2.18.tgz#5e44b3aab6c482c63cd1c6045ea48c97b49a69b9"
@@ -11608,6 +11613,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typeface-montserrat@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-montserrat/-/typeface-montserrat-1.1.13.tgz#2a16729c174dd1a8c3fec05a851b7725412606cc"
+  integrity sha512-Pklkyj0e+K+6I/t0M6JBDBphpfJkF1k+3qd8qDnp9aVtCC7oGBQWTAcL6+5eArfGe7h73uPwyal73hEkf9YCUA==
 
 unbox-primitive@^1.0.1:
   version "1.0.1"

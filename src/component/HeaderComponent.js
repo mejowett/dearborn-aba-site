@@ -28,8 +28,8 @@ class Header extends Component {
   render() {
     return (
       <React.Fragment>
-        <section class="colored-section" id="title">
-          <div class="container-fluid">
+        <section className="colored-section" id="title">
+          <div className="container-fluid">
           <Navbar dark expand="md">
             <NavbarBrand className="mr-auto" href="/"></NavbarBrand>
             <div className="container">
@@ -43,10 +43,10 @@ class Header extends Component {
                   </NavItem>
                   <NavItem>
                     <NavLink className="nav-link" to="/services">
-                      <i className="fa fa-info fa-lg" /> Services
+                      <i className="fa fa-list fa-lg" /> Services
                     </NavLink>
                   </NavItem>
-                  <NavItem>
+                   <NavItem>
                     <NavLink className="nav-link" to="/contactus">
                       <i className="fa fa-address-card fa-lg" /> Contact Us
                     </NavLink>
@@ -58,10 +58,13 @@ class Header extends Component {
           <Jumbotron fluid>
             <div className="container">
               <div className="row">
-                <div className="col">
+                <div className="col-lg-6">
                   <h4>Dearborn ABA</h4>
                   <h1>We work with Superheroes!</h1>
                 </div>
+                <div className="col-lg-6">
+                <img className="title-image" src="/images/super-heroes.jpg" alt="super-heroes" />
+                   </div>
               </div>
             </div>
           </Jumbotron>
