@@ -40,8 +40,7 @@ export const MODELS = [
   {
     id: 3,
     name: "Social Skills: Age Appropriate",
-    description:
-    `Real world experience and practice that can improve your child's
+    description: `Real world experience and practice that can improve your child's
     relationships. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
     incididunt ut labore et dolore magna aliqua. Vestibulum morbi blandit cursus risus at ultrices
     mi. Facilisi etiam dignissim diam quis enim. Iaculis at erat pellentesque adipiscing commodo
@@ -55,6 +54,6 @@ export const MODELS = [
     sit amet luctus. Nunc consequat interdum varius sit amet. Consectetur a erat nam at lectus urna
     duis convallis. Elementum tempus egestas sed sed. Vestibulum rhoncus est pellentesque elit
     ullamcorper dignissim cras tincidunt.`,
-    image: "/images/feeding-friendship.jpg",
+    image: "/images/friendship.jpg",
   },
 ];
