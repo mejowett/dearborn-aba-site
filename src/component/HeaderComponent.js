@@ -9,6 +9,7 @@ import {
   Jumbotron,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
+import Search from "./SearchComponent";
 
 class Header extends Component {
   constructor(props) {
@@ -58,6 +59,7 @@ class Header extends Component {
                     </NavItem>
                   </Nav>
                 </Collapse>
+                <Search />
               </div>
             </Navbar>
             <Jumbotron fluid>
