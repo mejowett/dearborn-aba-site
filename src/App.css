@@ -93,3 +93,28 @@ ol {
 .pricing-column {
   padding: 3% 2%;
 }
+
+.card {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid #333; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 20px 40px;
+}
+
+.card-image {
+  width: 50%;
+  height: 300px;
+  background-color: black;
+}
+
+.card-content {
+  width: 50%;
+  padding: 20px 40px;
+}
+
+.section-heading {
+  font-size: 4rem;
+}
