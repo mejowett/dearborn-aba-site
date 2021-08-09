@@ -1,33 +1,56 @@
 import React, { Component } from "react";
-import { Card, CardImg, CardBody } from "reactstrap";
+import {
+  Card,
+  CardImg,
+  CardImgOverlay,
+  CardText,
+  CardBody,
+  CardTitle,
+} from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ModelInfo from "./ModelnfoComponent";
+import { MODELS } from "../shared/models";
 
 class Services extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      models: MODELS,
+    };
   }
   render() {
-    const services = this.props.models.map((model) => {
+    const services = this.state.models.map((model) => {
       return (
-        <React.Fragment>
-          <div>
-            <div key={model.id} className="col">
-              <Card className="card">
-                <CardImg
-                  className="card-image"
-                  src={model.image}
-                  alt={model.name}
-                  // style={{ width: "500px", height: "300px" }}
-                />
-                <CardBody className="card-content">
-                  <h2>{model.name}</h2>
-                  <p>{model.description}</p>
-                </CardBody>
-              </Card>
-            </div>
-          </div>
-        </React.Fragment>
+        <div key={model.id} className="col">
+          <Card>
+            <CardImg
+              className="card-image"
+              src={model.image}
+              alt={model.name}
+            />
+
+            <CardBody className="card-content">
+              <h2>{model.name}</h2>
+              <p>{model.description}</p>
+            </CardBody>
+          </Card>
+        </div>
+        // <React.Fragment>
+        //   <div>
+        //     <div key={model.id} className="col">
+        //       <Card className="card">
+        //         <CardImg
+        //           className="card-image"
+        //           src={model.image}
+        //           alt={model.name}
+        //         />
+        //         <CardBody className="card-content">
+        //           <h2>{model.name}</h2>
+        //           <p>{model.description}</p>
+        //         </CardBody>
+        //       </Card>
+        //     </div>
+        //   </div>
+        // </React.Fragment>
       );
     });
     return (
@@ -35,7 +58,8 @@ class Services extends Component {
         <div>
           <h2 className="section-heading">Our Services</h2>
         </div>
-        ;<div className="row">{services}</div>
+
+        <div className="row">{services}</div>
       </div>
     );
   }

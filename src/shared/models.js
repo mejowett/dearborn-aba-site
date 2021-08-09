@@ -3,7 +3,7 @@ export const MODELS = [
     id: 0,
     name: "One on One Behavior Support",
     description:
-      "Our behavior technicians will work directly with the family.They will implement, monitor and collect data on treatment goals.",
+      "Our behavior technicians will work directly with the family. They will implement, monitor and collect data on treatment goals.",
     image: "/images/reading.jpg",
   },
 
