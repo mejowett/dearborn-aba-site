@@ -1,12 +1,5 @@
 import React, { Component } from "react";
-import {
-  Card,
-  CardImg,
-  CardImgOverlay,
-  CardText,
-  CardBody,
-  CardTitle,
-} from "reactstrap";
+import { Card, CardImg, CardBody } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { MODELS } from "../shared/models";
 
@@ -34,23 +27,6 @@ class Services extends Component {
             </CardBody>
           </Card>
         </div>
-        // <React.Fragment>
-        //   <div>
-        //     <div key={model.id} className="col">
-        //       <Card className="card">
-        //         <CardImg
-        //           className="card-image"
-        //           src={model.image}
-        //           alt={model.name}
-        //         />
-        //         <CardBody className="card-content">
-        //           <h2>{model.name}</h2>
-        //           <p>{model.description}</p>
-        //         </CardBody>
-        //       </Card>
-        //     </div>
-        //   </div>
-        // </React.Fragment>
       );
     });
     return (
