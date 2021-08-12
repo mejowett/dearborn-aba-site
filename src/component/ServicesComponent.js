@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, CardImg, CardBody } from "reactstrap";
+import { Card, CardImg, CardBody, Button } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { MODELS } from "../shared/models";
 
@@ -24,6 +24,7 @@ class Services extends Component {
             <CardBody className="card-content">
               <h2>{model.name}</h2>
               <p>{model.description}</p>
+              <Button className="primary-lg">Read More</Button>
             </CardBody>
           </Card>
         </div>
