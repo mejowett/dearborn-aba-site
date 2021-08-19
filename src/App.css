@@ -84,18 +84,15 @@ ol {
 
 #cta {
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .site-footer {
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 .link {
-  padding: 8px;
-}
-
-.pricing-column {
-  padding: 3% 2%;
+  padding: 10px;
 }
 
 .card {
@@ -105,7 +102,7 @@ ol {
   border: 1px solid #333;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  padding: 20px 40px;
+  padding: 30px 40px;
 }
 
 .card-image {
@@ -119,12 +116,17 @@ ol {
   padding: 20px 40px;
 }
 
+.col {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .section-heading {
   font-size: 4rem;
 }
 
 .social {
-  padding-block: 20px;
+  padding-block: 30px;
 }
 
 .footer-dark {
@@ -171,7 +173,7 @@ ol {
   text-align: center;
 }
 
-.footer-dark .item.social > a {
+.footer-dark .item.social > {
   font-size: 20px;
   width: 36px;
   height: 36px;
