@@ -3,6 +3,7 @@ import Header from "./HeaderComponent";
 import Home from "./HomeComponent";
 import Contact from "./ContactComponent";
 import Services from "./ServicesComponent";
+import Faq from  "./FaqComponent";
 import CallToAction from "./CallToActionComponent";
 import Footer from "./FooterComponent";
 import { Switch, Route, Redirect } from "react-router-dom";
@@ -30,6 +31,8 @@ class Main extends Component {
           />
           <Route path="/contactus" component={Contact} />
           <Redirect to="/home" />
+          {/* <Route path="/faq" component={Faq}
+          <Redirect to="home" /> */}
         </Switch>
         <CallToAction />
         <Footer />

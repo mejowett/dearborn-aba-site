@@ -36,7 +36,7 @@ class Header extends Component {
               <div className="container">
                 <NavbarToggler onClick={this.toggleNav} />
                 <Collapse isOpen={this.state.isNavOpen} navbar>
-                  <Nav navbar>
+                <Nav navbar>
                     <NavItem>
                       <NavLink className="nav-link" to="/home">
                         Dearborn ABA
@@ -53,6 +53,12 @@ class Header extends Component {
                       </NavLink>
                     </NavItem>
                     <NavItem>
+                      <NavLink className="nav-link" to="/faq">
+                        <i className="fa fa-list fa-lg" /> FAQ
+                      </NavLink>
+                    </NavItem>
+
+                    <NavItem>
                       <NavLink className="nav-link" to="/contactus">
                         <i className="fa fa-address-card fa-lg" /> Contact
                       </NavLink>
@@ -61,7 +67,7 @@ class Header extends Component {
                 </Collapse>
                 <Search />
               </div>
-            </Navbar>
+          </Navbar>
             <Jumbotron fluid>
               <div className="container">
                 <div className="row">
