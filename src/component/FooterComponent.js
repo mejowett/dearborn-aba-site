@@ -21,6 +21,11 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
+                  <Link className="link" to="/faq">
+                    FAQ
+                  </Link>
+                </li>
+                <li>
                   <Link className="link" to="/contactus">
                     Contact
                   </Link>
