@@ -13,7 +13,7 @@ const Faq = () => {
   
     return (
       <React.Fragment>
-        <h1>React Accordion Demo</h1>
+        <h1>Frequently Asked Questions</h1>
         <div className="accordion">
           <div className="accordion-item">
             <div className="accordion-title">

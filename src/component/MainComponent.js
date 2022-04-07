@@ -29,10 +29,10 @@ class Main extends Component {
             path="/services"
             render={() => <Services models={this.state.models} />}
           />
+          <Route path="/faq" component={Faq} />
+          <Redirect to="home" />
           <Route path="/contactus" component={Contact} />
           <Redirect to="/home" />
-          {/* <Route path="/faq" component={Faq}
-          <Redirect to="home" /> */}
         </Switch>
         <CallToAction />
         <Footer />
