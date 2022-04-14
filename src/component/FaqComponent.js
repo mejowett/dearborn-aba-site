@@ -1,31 +1,37 @@
-import React from "react";
+import React, { Component } from 'react';
+import Accordion from 'react-bootstrap/Accordion';
 
-const Faq = () => {
-    const accordionData = {
-      title: 'Section 1',
-      content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-        laborum cupiditate possimus labore, hic temporibus velit dicta earum
-        suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-        voluptatem.`
-    };
-  
-    const { title, content } = accordionData;
-  
+class Faq extends Component {
+  render() {
     return (
-      <React.Fragment>
-        <h1>Frequently Asked Questions</h1>
-        <div className="accordion">
-          <div className="accordion-item">
-            <div className="accordion-title">
-              <div>{title}</div>
-              <div>+</div>
-            </div>
-            <div className="accordion-content">{content}</div>
-          </div>
-        </div>
-      </React.Fragment>
+      <Accordion>
+        <Accordion.Item eventKey="0">
+          <Accordion.Header>Accordion Item #1</Accordion.Header>
+          <Accordion.Body>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="1">
+          <Accordion.Header>Accordion Item #2</Accordion.Header>
+          <Accordion.Body>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
     );
-  };
-  
+  }
+}
 
 export default Faq;
