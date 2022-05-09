@@ -45,14 +45,14 @@ class Services extends Component {
                 <ModalHeader toggle={this.toggleModal}>
                   <h2>Faucibus Pulvinar Elementum</h2>
                 </ModalHeader>
-                <ModalBody>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                <ModalBody className="modal-content">
+                  <p>{model.read}
+                    {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Vitae sapien pellentesque habitant morbi tristique.
                     Faucibus ornare suspendisse sed nisi lacus sed viverra.
                     Faucibus pulvinar elementum integer enim neque volutpat ac
-                    tincidunt.
+                    tincidunt. */}
                   </p>
                 </ModalBody>
               </Modal>
